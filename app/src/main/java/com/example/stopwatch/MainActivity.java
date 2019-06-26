@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         runTimer();
+
+
     }
 
     public void onCLickStart(View view) {
@@ -50,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                     seconds++;
                 }
 
-//                handler.postDelayed(this, 1000);
+                handler.postDelayed(this, 1000); // Post the code again with a delay of 1 sec
             }
         });
 
